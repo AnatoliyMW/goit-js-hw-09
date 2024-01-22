@@ -49,7 +49,7 @@ feedback.addEventListener('submit', e => {
   }
   e.preventDefault();
   console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
-  localStorage.clear();
+  localStorage.clear(); // або .removeItem('feedback-form-state'), якщо хочемо тільки цей ключ видалити
   feedback.reset();
 });
 
